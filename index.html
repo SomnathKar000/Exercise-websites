@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+<body id="body">
+    <ul id = "elements">
+        <li class="list">First Section</li>
+        <li class="list">Second Section</li>
+        <li class="list">Third Section</li>
+    </ul>
+    <div id ="name">Somnath Kar</div>
+    <table>
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td>Three</td>
+            <td>Four</td>
+        </tr>
+    </table>
+    <script>
+        // Root node
+        // console.log(document.documentElement);
+        // console.log(document.head);
+        // console.log(document.body);
+        // // Childrens
+        
+        // console.log(document.body.childNodes);
+        // console.log(document.body.children);
+        // console.log(document.body.firstChild);
+        // console.log(document.body.lastChild);
+        // console.log(document.body.firstElementChild);
+        // console.log(document.body.lastElementChild);
+        // for (node of document.body.children){
+        //     console.log(node);
+        // }
+        // const nodeOfBody = Array.from(document.body.children);
+        // console.log(nodeOfBody);
+
+        // Siblings
+        // const ulTag = document.body.children[0];
+        // const firstLi = ulTag.children[0];
+        // const secondLi = ulTag.children[1];
+        // const thirdLi = ulTag.children[2];
+        // console.log(secondLi.previousElementSibling.textContent);
+        // console.log(ulTag.nextElementSibling);
+        // const tableTag = ulTag.nextElementSibling;
+        // console.log(tableTag.tBodies[0].rows[1].cells[1].textContent);
+        // console.log(tableTag.rows[0].cells[0].style = "background-color: orange");
+        // element.style.backgroundColor = "orange"
+        // const ulTag =document.getElementById("element");
+        // ulTag.style.backgroundColor ="red";  
+        // const liTag = document.getElementsByClassName("list");
+        // console.log(liTag);
+        // lastUl = document.querySelectorAll("ul > li:nth-child(2)");
+        // console.log(element.id);
+        // console.log(elements.getAttribute("name"));
+        // console.log(elements.setAttribute("title","Somthing"));
+        // console.log(elements.getAttribute("title"));
+        // console.log(elements.attributes);
+
+        // creating and removeing the node elements 
+        const newDiv = document.createElement("div");
+        // const text = document.createTextNode("Added a new div");
+        newDiv.textContent = "Added a new div";
+        // newDiv.appendChild(text);
+        const name = document.getElementById("name");
+        body.append(newDiv);
+        // body.prepend(newDiv);
+        // name.replaceWith(newDiv);
+        // name.remove();
+        newDiv.innerHTML =` <DIv>Added a new html lines</div>
+            <p>Paragraph line </P>`
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Turn on devices</h1>
+    <script>
+        var devices = prompt("Enter whitch device");
+        switch (devices){
+            case `fan`:
+                console.log(`Fan is turned on`);
+                break;
+                
+           case `ac`:
+                console.log(`AC is turned on`);
+                break;
+            
+            case `charger`:
+                console.log(`Charger is turned on`);
+                break;
+            
+            case `tubelight`:
+                console.log(`Tubelight is turned on`);
+                break;
+            default:
+                console.log(`${devices} Nothig is found`);
+                break;
+        }
+        console.log("our kuch on karu?")
+    </script>
+</body>
+</html>
